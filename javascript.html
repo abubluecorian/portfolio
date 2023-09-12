@@ -6,10 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div></div>
-    <h1>
-        Copy these code and run in the console and ENJOY!
-    </h1>
+ <h1>
+    Working With Conditional statements 
+ </h1>
+ <div>
+    
+    In this reading, you will learn when to use the if else statement and when to use the switch statement.
+
+Both if else and switch are used to determine the program execution flow based on whether or not some conditions have been met.
+
+This is why they are sometimes referred to as flow control statements. In other words, they control the flow of execution of your code, so that some code can be skipped, while other code can be executed.
+
+At the heart of both flow control structures lies the evaluation of one or more conditions.
+
+Generally, if else is better suited if there is a binary choice in the condition.
+
+For example, in plain English: if it's sunny, wear sunglasses. Otherwise, don't.
+
+In this case, using an if statement is an obvious choice.
+
+When there are a smaller number of possible outcomes of truthy checks, it is still possible to use an if else statement, such as:
+
+ </div>
+ <h2>
+    Copy these code and run in the console and ENJOY!
+</h2>
     <pre><code> var light = "green";
         if(light == "green") {
             console.log("Drive")
@@ -22,9 +43,40 @@
             console.log("The car is not green, orange, or red");
         } </pre></code>
 <h3>
+    <div>
+        However, if there are a lot of possible outcomes, it is best practice to use a switch statement because it is easier less verbose. Being easier to read, it is easier to follow the logic, and thus reduce cognitive load of reading multiple conditions.
+
+Nevertheless, this is not a rule set in stone. It is simply a stylistic choice.
+
+To reinforce this point, here's an example of the earlier if else conditional statement, using the switch syntax: 
+    </div>
+
+
+    <code>
+        <pre>
+            //converting the previous if-else example with switch-case
+            var light = "green";
+            switch(light) {
+               case 'green':
+                   console.log("Drive");
+                   break;
+               case 'orange':
+                   console.log("Get ready");
+                   break;
+               case 'red':
+                   console.log("Don't drive");
+                   break;
+               default:
+                   //this block will run if no condition matches
+                   console.log('The light is not green, orange, or red');
+                   break;
+            } 
+        </pre>
+    </code>
+    <strong>
+      More examples of switch </strong>
 <ol>
-    <li>
-       more examples of switch </li>
+ 
        <li>
         Code the days of the week program as a switch statement
        </li>
@@ -43,7 +95,7 @@
     At the very bottom of the switch statement, add the default case and add a console.log('There is no such day').
 </li>
 
-// 
+
 
 <li>
 
@@ -63,11 +115,11 @@ Finally, update the console.log calls for each case, based on whatever activity 
 // Don't forget to add a break at the very end of each case in a switch statement.
 </strong>
 <h3>
-    Lets Begin
+    Lets Begin Copy and paste the following snippet see the result 
 </h3>
-<code>
 
-<pre>
+
+    <code>
 var day = `Sunday`;
 switch(day) {
    case 'Monday':
@@ -95,11 +147,11 @@ switch(day) {
        //this block will run if no condition matches
        console.log('There is no such day');
 }
-
-// output - Have barbecue
+</code>
+<strong> output - Have barbecue</strong>
 
             </pre>
-        </code>
+      
     <script>
     var light = green;
 if(light == "green") {
