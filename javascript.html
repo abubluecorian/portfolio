@@ -168,107 +168,44 @@ switch(day) {
 
             </pre>
       
-    <script>
-    var light = green;
-if(light == "green") {
-    console.log("Drive")
-} else if (light == "orange") {
-    console.log("Get ready")
-} else if (light == "red") {
-    console.log("Dont' drive")
-} else {
-    //this block will run if no condition matches
-    console.log("The car is not green, orange, or red");
-}
+    <h1>
+        for and while loops 
+    </h1>
+    <strong>
+        Examples of incrementing a value using a for loop
+    </strong>
+    <p> Exercise Question 1:
+        Write a "for" loop that will perform exactly the same repetitive code as this:
+    </p>
+    <code>
+console.log(5) <br>
+console.log(4)  <br>
+console.log(3) <br> 
+console.log(2)  <br>
+console.log(1)    <br>
+console.log('Countdown finished!') 
 
-//using SWITCH STATEMENT 
-var light = green;
-//converting the previous if-else example with switch-case
-switch(light) {
-    case 'green':
-        console.log("Drive");
-        break;
-    case 'orange':
-        console.log("Get ready");
-        break;
-    case 'red':
-        console.log("Don't drive");
-        break;
-    default:
-        //this block will run if no condition matches
-        console.log('The light is not green, orange, or red');
-        break;
- }
-
-<div>
-    Additional resources for Conditionals and Loops
-Here is a list of resources that may be helpful as you continue your learning journey.
-
-<a href="https://www.javascripttutorial.net/javascript-comparison-operators/">Comparison Operators </a>
- 
-
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">Truthy </a>
- 
-
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy"> Falsy </a>
- 
-
-Conditional statements
-
-In JavaScript, there is also a shorthand version of writing a conditional statement, known as the conditional (ternary) operator: 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">
-    Conditional (ternary) operator </a>
-    </div>
-
-//  more examples of switch 
-// Code the days of the week program as a switch statement
-// On the next line, define a new variable, name it day, and set its value to "Sunday".
-
-// Start coding a switch statement, passing the day variable as the expression to evaluate.
-
-// Inside the switch, add cases for every day of the week, starting with 'Monday', and ending with 'Sunday'. Make sure to use string values for days. Inside each case, for now, just add a console.log('Do something'), and add a break; on the line below.
-
-// At the very bottom of the switch statement, add the default case and add a console.log('There is no such day').
-
-// Finally, update the console.log calls for each case, based on whatever activity you have on each of the days.
-
-// Tips
-// If you need to make sure that multiple conditions are true in an if statement, you can do so using the && operator
-
-// In JavaScript, the correct syntax of the "greater than or equal to" operator is: >=.
-
-// Don't forget to add a break at the very end of each case in a switch statement.
-var day = `Sunday`;
-switch(day) {
-   case 'Monday':
-       console.log('Read a book');
-       break;
-   case 'Tuesday':
-       console.log('Watch a movie');
-       break;
-   case 'Wednesday':
-       console.log('Read a book');
-       break;
-   case 'Thursday':
-       console.log('Play basketball');
-       break;
-   case 'Friday':
-       console.log('Socialize');
-       break;
-   case 'Saturday':
-       console.log('Chill');
-       break;
-   case 'Sunday':
-       console.log('Have barbecue');
-       break;
-   default:
-       //this block will run if no condition matches
-       console.log('There is no such day');
-}
-
-// output - Have barbecue
-
-
-</script>
+    </code>
+    <code>
+        OUTPUT: 
+        5 <br>
+4 <br>
+3 <br>
+2 <br>
+1 <br>
+Countdown finished!
+    </code>
+    <strong>
+        Solution: 1
+    </strong>
+    <code>
+        for (var i = 5; i > 0; i--) {
+            console.log(i);
+        };
+        console.log('Countdown finished!');
+    </code>
+    <strong>
+Note that the syntax for Decrementing a number doesnt contain i < = 0. It will always be i > 0; and the i will start from the greter number like if want a countdown from 10
+ to 5 i will be "i = 10;i<0;i--"    </strong>
 </body>
 </html>
