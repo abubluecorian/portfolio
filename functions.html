@@ -57,7 +57,7 @@ As covered in previous lessons in this course, a for loop needs the following in
     
     This means that I'll have a one-to-one mapping of the current value of the i variable at any given time, corresponding to the same index position of any item in the arr array
     <br>
-    
+
      2. The for loop's exit condition is when the value of i is equal or greater than arr.length. 
     
     Since the arr.length counts the number of items in the array from one, and the array items are indexed from zero, this effectively means that as soon as i is equal to arr.length, the loop will finish and any other code after it will be run. 
@@ -82,6 +82,9 @@ As covered in previous lessons in this course, a for loop needs the following in
     The most Tricky letter finder Function
 </h3>
 <code>
+    <pre>
+
+
     function letterFinder(word, match) {
         for(var i = 0; i < word.length; i++) {
             if(word[i] == match) {
@@ -94,7 +97,7 @@ As covered in previous lessons in this course, a for loop needs the following in
     }
     
     letterFinder("test", "t")
-    
+</pre>
 </code>
 <strong>
     output:
