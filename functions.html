@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Md Abu Zer- Building and calling functions</title>
 </head>
-<body>
+<body class="body-ui ">
    <h3>Building and calling functions </h3> 
 In this reading, you will learn how to build and call a function. The purpose of this reading is to provide you with an example of function declaration (build) and function invocation (call). In the next lesson you will be writing the code.
 
@@ -53,5 +53,37 @@ Now that I know exactly how my for loop should behave, I can add it to my listAr
         }
     }
 </code>
+<h3>
+    The most Tricky letter finder Function
+</h3>
+<code>
+    function letterFinder(word, match) {
+        for(var i = 0; i < word.length; i++) {
+            if(word[i] == match) {
+                //check if the current characater, word[i], is equal to the match
+                console.log('Found the', match, 'at', i)
+            } else {
+                console.log('---No match found at', i)
+            }
+        }
+    }
+    
+    letterFinder("test", "t")
+    
+</code>
+<strong>
+    output:
+</strong>
+<code>
+    ---No match found at 0
+Found the a at 1
+---No match found at 2
+---No match found at 3
+---No match found at 4
+Found the a at 5
+</code>
+<strong>
+    Here the paramete 1 is test (which is word ) and para,eter 2 is t which is a letter so the function here is finding  the letter "t" is in which place of word "test"
+</strong>
 </body>
 </html>
