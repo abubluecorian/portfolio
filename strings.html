@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
-<body>
+    <body class="body-ui ">
     <h3>
         String cheat sheet
       
@@ -26,9 +26,10 @@
         
         For all the examples, I'll be using either one or both of the following variables:  
     </article>
-    <code>
+    <code> <pre> 
         var greet = "Hello, ";
 var place = "World"
+</pre>
     </code>
     <article>
         Note that whatever string properties and methods I demo in the following examples, I could have ran it on those strings directly, without saving them to a variable such as the ones I named greet and place.
@@ -40,5 +41,68 @@ All strings have at their disposal several built-in properties, but there's a si
     <code>
         greet.length; // 7 
     </code>
+
+    <strong>
+        To read each individual character at a specific index in a string, starting from zero, I can use the "charAt()" method:  
+    </strong>
+    <code>
+        //     var greet = "Hello, ";
+       // var place = "World" 
+        greet.charAt(0); // 'H' 
+    </code>
+    <strong>
+        The concat() method joins two strings:  
+    </strong>
+    <code>
+        "Wo".concat("rl").concat("d"); // 'World'
+    </code>
+    <hr>
+    The "indexOf" returns the location of the first position that matches a character: 
+    <code>
+        "ho-ho-ho".indexOf('h'); // 0
+"ho-ho-ho".indexOf('o'); // 1
+"ho-ho-ho".indexOf('-'); // 2
+    </code>
+    <hr>
+    The lastIndexOf finds the last match, otherwise it works the same as indexOf.
+    <hr>
+    he split method chops up the string into an array of sub-strings:
+    <code>
+        "ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
+    </code>
+    <hr>
+    There are also some methods to change the casing of strings. For example:  
+    <code>
+        greet.toUpperCase(); // "HELLO, "
+greet.toLowerCase(); // "hello, "
+    </code>
+    <ul>
+     
+            Here's a list of all the methods covered in this cheat sheet:
+            <li>
+charAt() 
+</li>
+<li>
+concat() 
+</li>
+<li>
+    indexOf() 
+</li>
+<li>
+    lastIndexOf() 
+</li>
+
+<li>
+    split() 
+</li>
+
+<li>
+    toUpperCase() 
+</li>
+
+<li>
+toLowerCase()  
+        </li>
+    </ul>
 </body>
 </html>
