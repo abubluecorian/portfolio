@@ -2,7 +2,7 @@
 
 ## About Me
 
-I'm a Senior Software Engineer with nearly a decade of experience in the tech industry. Over the years, I've encountered various challenges, navigated both public and corporate sectors, and gained valuable insights into the engineering career landscape.
+My  self Muhammad Abu Zer or Md. Abu Zer, I'm a Senior Software Engineer with nearly a decade of experience in the tech industry. Over the years, I've encountered various challenges, navigated both public and corporate sectors, and gained valuable insights into the engineering career landscape.
 
 ## My Mission
 
