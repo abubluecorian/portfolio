@@ -254,7 +254,7 @@ section {
   top: 15px;
   width: 2rem;
   height: 2px;
-  background-color: var(--color-grey-5);
+  background-color: green
 }
 .about-container .left-about {
   padding-right: 5rem;
