@@ -13,39 +13,70 @@ width:80%; padding: 20px;background-color: rgb(215, 214, 235);
         color:blue;
     }
 
-    /* Add your styles for the layout here */
+ 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Styling for code blocks */
-code {
-    background-color: #f5f5f5;
-    /* padding: 20px;
-    border: 1px solid #ddd; */
-    margin: 20px 0;
-    overflow: hidden;
-    position: relative;
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.code-block h3 {
-    font-size: 20px;
-    color: #333;
-}
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
 
-.code-block code {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    font-family: Consolas, monospace;
-    display: none; /* Hide initially */
-}
+        article {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
 
-/* Styling for lazy loading indicator */
-.lazy-loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #888;
-    font-size: 14px;
-}
+        strong {
+            font-weight: bold;
+            color: #444;
+        }
 
-/* Add more styles as needed */
+        code {
+            background-color: #f5f5f5;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-family: Consolas, monospace;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #555;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+   
