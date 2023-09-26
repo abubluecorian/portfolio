@@ -46,7 +46,36 @@ An example can be, say, attempting to console log a variable that doesn't exist:
         Note: Please copy the code and run in console to see the output
     </strong>
     <code>
-        console.log(username); 
+        <pre>
+            console.log(username); 
+        </pre>
+     
     </code>
+    <strong>
+        If the variable named username hasn't been declared, the above line of code will result in the following output:
+    </strong>
+    <code>
+        <pre>
+            Uncaught ReferenceError: username is not defined
+        </pre>
+    </code>
+    <h3>
+        SyntaxError
+
+    </h3>
+    <strong>
+        Any kind of invalid JavaScript code will cause a SyntaxError. <hr>
+
+
+For example:
+    </strong>
+    <code>
+        <pre>
+            var a "there's no assignment operator here"; <br>
+            The above line of code will throw the following error:   <br>
+        <blockquote>   Uncaught SyntaxError: Unexpected string </blockquote> 
+        </pre>
+    </code>
+
 </body>
 </html>
