@@ -3,136 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Error Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        article {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #444;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-family: Consolas, monospace;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #555;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        Syntax, logical and runtime errors
-    </h1>
-    <article>
-       
-By the end of this reading, you'll be able to:
-
-Recognize common types of errors in JavaScript
-
-Here are some of the most common errors in JavaScript: 
-
-ReferenceError 
-
-SyntaxError 
-
-TypeError 
-
-RangeError
-
-There are some other errors in JavaScript. These other errors include: 
-
-AggregateError 
-
-Error 
-
-InternalError 
-
-URIError
-
-However, in this reading I'll focus on the Reference, Syntax, Type, and Range errors.
-
-ReferenceError
-A ReferenceError gets thrown when, for example, one tries to use variables that haven't been declared anywhere.
-
-An example can be, say, attempting to console log a variable that doesn't exist:
-    </article>
-    <strong>
-        Note: Please copy the code and run in console to see the output
-    </strong>
-    <code>
-        <pre>
-            console.log(username); 
-        </pre>
-     
-    </code>
-    <strong>
-        If the variable named username hasn't been declared, the above line of code will result in the following output:
-    </strong>
-    <code>
-        <pre>
-            Uncaught ReferenceError: username is not defined
-        </pre>
-    </code>
-    <h3>
-        SyntaxError
-
-    </h3>
-    <strong>
-        Any kind of invalid JavaScript code will cause a SyntaxError. <hr>
-
-
-For example:
-    </strong>
-    <code>
-        <pre>
-            var a "there's no assignment operator here"; <br>
-            The above line of code will throw the following error:   <br>
-        <blockquote>   Uncaught SyntaxError: Unexpected string </blockquote> 
-        </pre>
-    </code>
-    <strong>
-        Note: - There's an interesting caveat regarding the SyntaxError in JavaScript: it cannot be caught using the try-catch block.  
-    </strong>
-    <h3>
-        TypeError
-   
-    </h3>
-    <p>
-        A TypeError is thrown when, for example, trying to run a method on a non-supported data type. <hr>
-
-        
-        A simple example is attempting to run the pop() method on a string: 
-    </p>
-    <code>
-        <pre>
-            "hello".pop() // Uncaught TypeError: "hello".pop is not a function
-        </pre>
-    </code>
-
-    <h3>
-        RangeError
-
-    </h3>
-<p>
-    A RangeError is thrown when we're giving a value to a function, but that value is out of the allowed range of acceptable input values.
-
-Here's a simple example of converting an everyday Base 10 number (a number of the common decimal system) to a Base 2 number (i.e binary number).
-<br>
-For example:
-</p>
-<code>
-    <pre>
-        (10).toString(2); // '1010'
-    </pre>
-</code>
-<p>
-    The value of 2 when passed to the toString() method, is like saying to JavaScript: "convert the value of 10 of the Base 10 number system, to its counter-part in the Base 2 number system".
-<br>
-JavaScript obliges and "translates" the "regular" number 10 to its binary counter-part.
-
-Besides using Base 2 number system, I can also use the Base 8, like this:
-</p>
-<code>
-    <pre>
-        (10).toString(8); // 12
-    </pre>
-</code>
-<p>
-    I get back the value 12, which is the plain number 10, writen in Base 8 number system.
-
-    However, if I try to use a non-existing number system, such as an imaginary Base 100, since this number system effectively doesn't exist in JavaScript, I will get the RangeError,
-     because a non-existing Base 100 system is <b> out of range</b>  of the number systems that are available to the toString() method: 
-</p>
-<code>
-    <pre>
-        (10).toString(100); // Uncaught RangeError: toString() radix argument must be between 2 and 36
-    </pre>
-</code>
+    <div class="container">
+        <h1>Syntax, Logical, and Runtime Errors</h1>
+        <article>
+            By the end of this reading, you'll be able to:
+            <ul>
+                <li>Recognize common types of errors in JavaScript</li>
+            </ul>
+            Here are some of the most common errors in JavaScript:
+            <ul>
+                <li>ReferenceError</li>
+                <li>SyntaxError</li>
+                <li>TypeError</li>
+                <li>RangeError</li>
+            </ul>
+            There are some other errors in JavaScript. These other errors include:
+            <ul>
+                <li>AggregateError</li>
+                <li>Error</li>
+                <li>InternalError</li>
+                <li>URIError</li>
+            </ul>
+            However, in this reading, I'll focus on the Reference, Syntax, Type, and Range errors.
+        </article>
+        <strong>Note: Please copy the code and run it in the console to see the output</strong>
+        <code>
+            <pre>
+console.log(username);
+            </pre>
+        </code>
+        <strong>If the variable named username hasn't been declared, the above line of code will result in the following output:</strong>
+        <code>
+            <pre>
+Uncaught ReferenceError: username is not defined
+            </pre>
+        </code>
+        <h3>SyntaxError</h3>
+        <strong>Any kind of invalid JavaScript code will cause a SyntaxError.</strong>
+        <hr>
+        <code>
+            <pre>
+var a = "there's no assignment operator here"; <br>
+The above line of code will throw the following error:<br>
+<blockquote>Uncaught SyntaxError: Unexpected string</blockquote>
+            </pre>
+        </code>
+        <strong>Note: - There's an interesting caveat regarding the SyntaxError in JavaScript: it cannot be caught using the try-catch block.</strong>
+        <h3>TypeError</h3>
+        <p>A TypeError is thrown when, for example, trying to run a method on a non-supported data type.</p>
+        <hr>
+        <code>
+            <pre>
+"hello".pop() // Uncaught TypeError: "hello".pop is not a function
+            </pre>
+        </code>
+        <h3>RangeError</h3>
+        <p>A RangeError is thrown when we're giving a value to a function, but that value is out of the allowed range of acceptable input values.</p>
+        <p>Here's a simple example of converting an everyday Base 10 number (a number of the common decimal system) to a Base 2 number (i.e., binary number).</p>
+        <br>
+        <code>
+            <pre>
+(10).toString(2); // '1010'
+            </pre>
+        </code>
+        <p>The value of 2 when passed to the toString() method is like saying to JavaScript: "convert the value of 10 of the Base 10 number system to its counterpart in the Base 2 number system".</p>
+        <p>JavaScript obliges and "translates" the "regular" number 10 to its binary counterpart.</p>
+        <p>Besides using Base 2 number systems, I can also use Base 8, like this:</p>
+        <code>
+            <pre>
+(10).toString(8); // 12
+            </pre>
+        </code>
+        <p>I get back the value 12, which is the plain number 10, written in the Base 8 number system.</p>
+        <p>However, if I try to use a non-existing number system, such as an imaginary Base 100, since this number system effectively doesn't exist in JavaScript, I will get the RangeError because a non-existing Base 100 system is <b>out of range</b> of the number systems that are available to the toString() method:</p>
+        <code>
+            <pre>
+(10).toString(100); // Uncaught RangeError: toString() radix argument must be between 2 and 36
+            </pre>
+        </code>
+    </div>
 </body>
 </html>
