@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error Types</title>
+    <title>Abu Zer | Error Types | </title>
     <link rel="icon" type="image/x-icon" href="IT ADMIN-Abu.jpeg">
     <link rel="stylesheet" href="styles/new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,6 +92,76 @@ The above line of code will throw the following error:<br>
 (10).toString(100); // Uncaught RangeError: toString() radix argument must be between 2 and 36
             </pre>
         </code>
+
+    <div>
+        <h3>Exercise: Error Prevention</h3>
+        <p>Instructions</p>
+        <ul>
+            <li>
+                Task 1: Code a function declaration<br>
+                You need to code a function declaration named addTwoNums, which accepts numbers a and b and console logs a + b.
+            </li>
+            <li>
+                Task 2: Invoke the addTwoNums function with a number and a string<br>
+                You need to invoke the addTwoNums using the following arguments: 5 and "5".
+            </li>
+            <li>
+                Task 3: Update the addTwoNums function with a try...catch block<br>
+                Add the try and catch blocks inside the function definition's body. For now, just make sure that the console log of a + b is inside the try block. Additionally, the catch block should catch an error named err and, inside the body of the catch block, you need to console log the err value.
+            </li>
+            <li>
+                Task 4: If the passed-in arguments are not numbers, throw an error<br>
+                If either of the arguments passed to the addTwoNums are not numbers, you'll throw an error.<br>
+                Specifically, code a conditional with the following logic:<br>
+                <ul>
+                    <li>
+                        if the typeof the a parameter is not equal to 'number', throw a new ReferenceError. Inside the ReferenceError, pass a custom error message of 'the first argument is not a number'.
+                    </li>
+                    <li>
+                        else if the typeof the b parameter is not equal to 'number', throw a new ReferenceError. Inside the ReferenceError, pass a custom error message of 'the second argument is not a number'.
+                    </li>
+                    <li>
+                        else, console log a + b
+                    </li>
+                </ul>
+                Once you've completed this task, all the code inside the try block will be inside these conditional statements.
+            </li>
+            <li>
+                Task 5: Update the catch block<br>
+                Inside the catch block, update the code from console.log(err) to console.log("Error!", err).
+            </li>
+            <li>
+                Task 6: Invoke the addTwoNums function<br>
+                Invoke the addTwoNums function using 5 and "5" as arguments.
+            </li>
+            <li>
+                Task 7: Add another console log under the addTwoNums function invocation<br>
+                Add another line of code that console logs the string "It still works".
+            </li>
+        </ul>
+        <h3>
+            Solution: Error prevention
+        </h3>
+        <code>
+            <pre>
+                function addTwoNums(a,b) {
+                    try {
+                        if(typeof(a) != 'number') {
+                            throw new ReferenceError('the first argument is not a number')
+                        } else if (typeof(b) != 'number') {
+                            throw new ReferenceError('the second argument is not a number')
+                        } else {
+                            console.log(a + b)
+                        }
+                    } catch(err) {
+                        console.log("Error!", err)
+                    }
+                }
+                addTwoNums(5, "5")
+                console.log("It still works")
+            </pre>
+        </code>
+    </div>
     </div>
 </body>
 </html>
