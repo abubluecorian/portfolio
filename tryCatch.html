@@ -97,13 +97,16 @@
             However, in this reading, I'll focus on the Reference, Syntax, Type, and Range errors.
         </article>
         <strong>Note: Please copy the code and run it in the console to see the output</strong>
-        <code>
+      
+      <br>  <code>
             <pre>
 console.log(username);
             </pre>
         </code>
+        <br>
         <strong>If the variable named username hasn't been declared, the above line of code will result in the following output:</strong>
-        <code>
+      
+      <br>  <code>
             <pre>
 Uncaught ReferenceError: username is not defined
             </pre>
@@ -121,7 +124,7 @@ The above line of code will throw the following error:<br>
         <strong>Note: - There's an interesting caveat regarding the SyntaxError in JavaScript: it cannot be caught using the try-catch block.</strong>
         <h3>TypeError</h3>
         <p>A TypeError is thrown when, for example, trying to run a method on a non-supported data type.</p>
-         
+         <br>
         <code>
             <pre>
 "hello".pop() // Uncaught TypeError: "hello".pop is not a function
@@ -135,7 +138,7 @@ The above line of code will throw the following error:<br>
             <pre>
 (10).toString(2); // '1010'
             </pre>
-        </code>
+        </code> <br>
         <p>The value of 2 when passed to the toString() method is like saying to JavaScript: "convert the value of 10 of the Base 10 number system to its counterpart in the Base 2 number system".</p>
         <p>JavaScript obliges and "translates" the "regular" number 10 to its binary counterpart.</p>
         <p>Besides using Base 2 number systems, I can also use Base 8, like this:</p>
@@ -144,6 +147,7 @@ The above line of code will throw the following error:<br>
 (10).toString(8); // 12
             </pre>
         </code>
+        <br>
         <p>I get back the value 12, which is the plain number 10, written in the Base 8 number system.</p>
         <p>However, if I try to use a non-existing number system, such as an imaginary Base 100, since this number system effectively doesn't exist in JavaScript, I will get the RangeError because a non-existing Base 100 system is <b>out of range</b> of the number systems that are available to the toString() method:</p>
         <code>
