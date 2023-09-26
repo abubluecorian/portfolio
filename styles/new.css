@@ -12,3 +12,40 @@ width:80%; padding: 20px;background-color: rgb(215, 214, 235);
     a{
         color:blue;
     }
+
+    /* Add your styles for the layout here */
+
+/* Styling for code blocks */
+.code-block {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.code-block h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.code-block code {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: Consolas, monospace;
+    display: none; /* Hide initially */
+}
+
+/* Styling for lazy loading indicator */
+.lazy-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-size: 14px;
+}
+
+/* Add more styles as needed */

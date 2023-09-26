@@ -52,3 +52,30 @@
         }
     });
 })();
+//JavaScript (lazy-load.js):
+
+document.addEventListener("DOMContentLoaded", function () {
+    const lazyLoadElements = document.querySelectorAll(".lazy-load");
+
+    lazyLoadElements.forEach((element) => {
+        const codeSrc = element.getAttribute("data-src");
+        const codeElement = document.createElement("code");
+        codeElement.classList.add("lazy-loading");
+        codeElement.innerText = "Loading...";
+
+        element.parentElement.appendChild(codeElement);
+
+        fetch(codeSrc)
+            .then((response) => response.text())
+            .then((data) => {
+                codeElement.innerText = data;
+                element.style.display = "block"; // Show the code block
+                codeElement.style.display = "none"; // Hide the loading indicator
+            })
+            .catch((error) => {
+                console.error("Error loading code:", error);
+                codeElement.innerText = "Error loading code.";
+            });
+    });
+});
+
