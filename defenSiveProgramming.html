@@ -62,7 +62,9 @@ The type of both the word and the match parameters must be string.
         <li>As a failing test, run the letterFinder function and pass it with any two numbers as arguments.</li>
         <li>As a passing test, run the letterFinder function and pass it with correct arguments, such as: letterFinder("cat", "c").</li>
     </ul>
+
     <code>
+        <pre>
         function letterFinder(word, match) {
             var condition1 = typeof(word) == 'string' && word.length >= 2; //if the word is a string and the length is greater than or equal to 2
             var condition2 = typeof(match) == 'string' && match.length == 1; //if the match is a string and the length is equal to 1
@@ -82,6 +84,7 @@ The type of both the word and the match parameters must be string.
         }
         letterFinder([],[])
         letterFinder("cat","c")
+    </pre>
     </code>
 </body>
 </html>
