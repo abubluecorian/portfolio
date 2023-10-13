@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muhammad Abu Zer Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="IT ADMIN-Abu.jpeg">
+        <link rel="stylesheet" href="styles/new.css">
+        <!-- <link rel="stylesheet" href="new.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-ui container ">
+        <h2>Discount Calculator</h2>
+        <p>
+            Welcome to the Discount Calculator! This tool allows you to calculate discounts based on your age. Simply enter the item's price and your age, and it will provide you with the applicable discount percentage.
+        </p>
+        <p>
+            - If you're 21 years old or younger, you'll receive a 10% discount.
+        </p>
+        <p>
+            - If you're 65 years or older, you're entitled to a 5% discount.
+        </p>
+        <p>
+            - If you fall between these age groups (22 to 64), you won't receive any specific discount.
+        </p>
+        <p>
+            Our calculator is designed to help you make informed purchasing decisions and understand the savings you can enjoy. Whether you're shopping for yourself or a loved one, this tool will assist you in determining the final price.
+        </p>
+        <p>
+            Feel free to enter the item's price and your age below and let the Discount Calculator do the rest. Happy shopping!
+        </p>
+        
+    <script>
+        var price = parseFloat(prompt("Enter the item Price"));
+let age = parseInt(prompt("Enter ur age in years"));
+var discount = 0.0
+// case I where the person's age is less than or equal to 21 e i.e. A youth
+if (age <=21) {
+     discount = .10;
+     document.write ("<h1 style='color: green;'> Congratulations As you are a  Youngster   with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
+let discountPrice = price * (1.0-discount ); 
+document.write(" Your updated price will be  $" + discountPrice);
+}
+// case II where the person's age is 65 or above i.e. a Senior citizen
+ else if  (age >= 65){
+    discount = 0.05;
+    document.write ("<h1 style='color: green;'> Congratulations As you are a Senior Citizen  with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
+let discountPrice = price * (1.0-discount ); 
+document.write(" Your updated price will be  $" + discountPrice);
+}
+// case III where the person is in between the age of  22 to 64 
+else  {
+    document.write ("<h1 style= 'color:red;'> Sorry ! You got No Discount, This offer is only for Youths and Senior Citizen  <br>");
+    let discountPrice = price * (1.0-discount ); 
+    document.write(" <h1 style= 'color:red;'>  Your updated price will be  $" + discountPrice);
+}
+
+    </script>
+</body>
+</html>
