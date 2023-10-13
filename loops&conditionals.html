@@ -14,7 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
     <body class="body-ui container " align="center">
-        <h1>Durga Puja Sale  </h1> <img src="https://media.tenor.com/-wNmBi1U2E8AAAAd/sale.gif" alt="">
+        <h1>Durga Puja Sale  </h1> <img src="https://media.tenor.com/-wNmBi1U2E8AAAAd/sale.gif" alt="Md Abu zer ">
+        <p>
+            During the joyous occasion of Durga Puja, we're running a special campaign that provides exclusive sales for both youngsters and senior citizens. Our calculator will help you determine the final price and the discount you can enjoy during this festive season.
+        </p>
         <p>
             Welcome to the Discount Calculator! This tool allows you to calculate discounts based on your age. Simply enter the item's price and your age, and it will provide you with the applicable discount percentage.
         </p>
@@ -27,9 +30,7 @@
         <p>
             - If you fall between these age groups (22 to 64), you won't receive any specific discount.
         </p>
-        <p>
-            During the joyous occasion of Durga Puja, we're running a special campaign that provides exclusive sales for both youngsters and senior citizens. Our calculator will help you determine the final price and the discount you can enjoy during this festive season.
-        </p>
+        
         <p>
             Feel free to enter the item's price and your age below and let the Discount Calculator do the rest. Happy shopping!
         </p>
@@ -51,13 +52,13 @@ document.write(" Your updated price will be  $" + discountPrice);
     discount = 0.05;
     document.write ("<h1 style='color: green;'> Congratulations As you are a Senior Citizen  with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
 let discountPrice = price * (1.0-discount ); 
-document.write(" Your updated price will be  $" + discountPrice);
+document.write("<h1 style= 'color:red;animation: blink 1s linear infinite;'> Your updated price will be  $" + discountPrice + "<h1>" );
 }
 // case III where the person is in between the age of  22 to 64 
 else  {
     document.write ("<h1 style= 'color:red;'> Sorry ! You got No Discount, This offer is only for Youths and Senior Citizen  <br>");
     let discountPrice = price * (1.0-discount ); 
-    document.write(" <h1 style= 'color:red;'>  Your updated price will be  $" + discountPrice);
+    document.write(" <h1 style= 'color:red;animation: blink 1s linear infinite;'>  Your updated price will be  $" + discountPrice + "<h1>");
 }
 
     </script>
