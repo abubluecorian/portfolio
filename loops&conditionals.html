@@ -14,7 +14,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
     <body class="body-ui container " align="center">
-        <h1>Durga Puja Sale  </h1> <img src="https://media.tenor.com/-wNmBi1U2E8AAAAd/sale.gif" alt="Md Abu zer ">
+       
+        <script>
+            var price = parseFloat(prompt("Enter the item Price"));
+    let age = parseInt(prompt("Enter ur age in years"));
+    var discount = 0.0
+    // case I where the person's age is less than or equal to 21 e i.e. A youth
+    if (age <=21) {
+         discount = .10;
+         document.write ("<h1 style='color: green;'> Congratulations As you are a  Youngster   with age  "  + age + " Years you will get "  + (discount * 100) + "% off  </h1><br>");
+    let discountPrice = price * (1.0-discount ); 
+    document.write("<h1 style='animation: blink 1s linear infinite;'> Your updated price will be  $" + discountPrice + "</h1>");
+    }
+    // case II where the person's age is 65 or above i.e. a Senior citizen
+     else if  (age >= 65){
+        discount = 0.05;
+        document.write ("<h1 style='color: green;'> Congratulations As you are a Senior Citizen  with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
+    let discountPrice = price * (1.0-discount ); 
+    document.write("<h1 style= 'color:red;animation: blink 1s linear infinite;'> Your updated price will be  $" + discountPrice + "<h1>" );
+    }
+    // case III where the person is in between the age of  22 to 64 
+    else  {
+        document.write ("<h1 style= 'color:red;'> Sorry ! You got No Discount, This offer is only for Youths and Senior Citizen  <br>");
+        let discountPrice = price * (1.0-discount ); 
+        document.write(" <h1 style= 'color:red;animation: blink 1s linear infinite;'>  Your updated price will be  $" + discountPrice + "<h1>");
+    }
+    
+        </script>
+ <h1>Durga Puja Sale  </h1> 
+ <img src="https://media.tenor.com/-wNmBi1U2E8AAAAd/sale.gif"  alt="Md Abu zer "/>
         <p>
             During the joyous occasion of Durga Puja, we're running a special campaign that provides exclusive sales for both youngsters and senior citizens. Our calculator will help you determine the final price and the discount you can enjoy during this festive season.
         </p>
@@ -32,35 +60,10 @@
         </p>
         
         <p>
-            Feel free to enter the item's price and your age below and let the Discount Calculator do the rest. Happy shopping!
+            Feel free to Reload the browser enter the item's price and your age  and let the Discount Calculator do the rest. Happy shopping!
         </p>
         
         
-    <script>
-        var price = parseFloat(prompt("Enter the item Price"));
-let age = parseInt(prompt("Enter ur age in years"));
-var discount = 0.0
-// case I where the person's age is less than or equal to 21 e i.e. A youth
-if (age <=21) {
-     discount = .10;
-     document.write ("<h1 style='color: green;'> Congratulations As you are a  Youngster   with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
-let discountPrice = price * (1.0-discount ); 
-document.write(" Your updated price will be  $" + discountPrice);
-}
-// case II where the person's age is 65 or above i.e. a Senior citizen
- else if  (age >= 65){
-    discount = 0.05;
-    document.write ("<h1 style='color: green;'> Congratulations As you are a Senior Citizen  with "  + age + " Years of age You get "  + (discount * 100) + "% off  </h1><br>");
-let discountPrice = price * (1.0-discount ); 
-document.write("<h1 style= 'color:red;animation: blink 1s linear infinite;'> Your updated price will be  $" + discountPrice + "<h1>" );
-}
-// case III where the person is in between the age of  22 to 64 
-else  {
-    document.write ("<h1 style= 'color:red;'> Sorry ! You got No Discount, This offer is only for Youths and Senior Citizen  <br>");
-    let discountPrice = price * (1.0-discount ); 
-    document.write(" <h1 style= 'color:red;animation: blink 1s linear infinite;'>  Your updated price will be  $" + discountPrice + "<h1>");
-}
-
-    </script>
+    
 </body>
 </html>

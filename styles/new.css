@@ -142,3 +142,6 @@
           .blink-text {
             animation: blink 1s linear infinite;
           }
+          img {
+           max-width: 100%;height: auto;
+          }
