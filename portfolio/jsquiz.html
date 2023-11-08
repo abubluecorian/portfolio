@@ -11,20 +11,15 @@
     </style>
 </head>
 <script>
-    const option1Checkbox = document.getElementById('q1_option1');
-const option2Checkbox = document.getElementById('q1_option2');
+    const option1Check1 = document.getElementById('q1_option1');
+    option1Check1.addEventListener("click", function(){
+if(option1Check1.checked){
+    console.log("Correct!")
 
-option1Checkbox.addEventListener('change', (event) => {
-  if (event.target.checked) {
-    alert('Correct!');
-  }
-});
+}
 
-option2Checkbox.addEventListener('change', (event) => {
-  if (event.target.checked) {
-    alert('Wrong answer!');
-  }
-});
+ });
+    
 
 </script>
 
