@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Quiz</title>
+    <style>
+        .answer {
+            display: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<script>
+    const option1Checkbox = document.getElementById('q1_option1');
+const option2Checkbox = document.getElementById('q1_option2');
+
+option1Checkbox.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    alert('Correct!');
+  }
+});
+
+option2Checkbox.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    alert('Wrong answer!');
+  }
+});
+
+</script>
+
+<body>
+
+<h1>JavaScript Quiz</h1>
+
+<!-- Question 1 -->
+<h2>Question 1</h2>
+<p>You can run JavaScript in a web browser's devtools console.</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q1_option1"> <label for="q1_option1">true</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q1_option2"> <label for="q1_option2">false</label>
+    </li>
+</ul>
+<p class="answer" id="q1_answer">Correct! The devtools console is useful for running JavaScript code.</p>
+
+<!-- Question 2 -->
+<h2>Question 2</h2>
+<p>Which of the following are valid comments in JavaScript? Select all that apply.</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q2_option1"> <label for="q2_option1">123</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q2_option2"> <label for="q2_option2">// Comment 2</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q2_option3"> <label for="q2_option3">12345</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q2_option4"> <label for="q2_option4">/* Comment 4 */</label>
+    </li>
+</ul>
+<p class="answer" id="q2_answer">Correct! // is used for inline comments.</p>
+<p class="answer" id="q2_answer">Correct! /* and */ define the beginning and end of multi-line comments.</p>
+
+<!-- Question 3 -->
+<h2>Question 3</h2>
+<p>Which of the following are valid data types in JavaScript? Select all that apply.</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q3_option1"> <label for="q3_option1">string</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q3_option2"> <label for="q3_option2">numbers</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q3_option3"> <label for="q3_option3">booleans</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q3_option4"> <label for="q3_option4">null</label>
+    </li>
+</ul>
+<p class="answer" id="q3_answer">Correct! The string data type represents a sequence of characters in JavaScript.</p>
+<p class="answer" id="q3_answer">Correct! Numbers represent both integer and decimal point numeric values.</p>
+<p class="answer" id="q3_answer">Correct! The boolean data type has one of two values; true or false.</p>
+<p class="answer" id="q3_answer">Correct! The null data type represents the absence of a value.</p>
+
+<!-- Question 4 -->
+<h2>Question 4</h2>
+<p>Which of the following is the logical AND operator in JavaScript?</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q4_option1"> <label for="q4_option1">3 &</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q4_option2"> <label for="q4_option2">312 &&</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q4_option3"> <label for="q4_option3">12 ||</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q4_option4"> <label for="q4_option4">3 |</label>
+    </li>
+</ul>
+<p class="answer" id="q4_answer">Correct! && is the logical AND operator used for condition checks.</p>
+
+<!-- Question 5 -->
+<h2>Question 5</h2>
+<p>Which of the following is the assignment operator in JavaScript?</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q5_option1"> <label for="q5_option1">123 =</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q5_option2"> <label for="q5_option2">123 ==</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q5_option3"> <label for="q5_option3">123 ===</label>
+    </li>
+</ul>
+<p class="answer" id="q5_answer">Correct! The = symbol is used to assign to variables in JavaScript.</p>
+
+<!-- Question 6 -->
+<h2>Question 6</h2>
+<p>How many times will the following code print the word 'Hello'?</p>
+<pre>
+for(var i = 0; i <= 5; i++) {
+    console.log("Hello");
+}
+</pre>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q6_option1"> <label for="q6_option1">4</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q6_option2"> <label for="q6_option2">5</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q6_option3"> <label for="q6_option3">6</label>
+    </li>
+</ul>
+<p class="answer" id="q6_answer">Correct! 'i' starts with the value '0'. The condition checks if 'i' is less than or equal to '5'. Each loop increments 'i' by '1'. This means that the loop will run 6 times.</p>
+
+<!-- Question 7 -->
+<h2>Question 7</h2>
+<p>What will print out when the following code runs?</p>
+<pre>
+var i = 3;
+var j = 5;
+
+if(i == 3 && j < 5) {
+    console.log("Hello");
+} else {
+    console.log("Goodbye");
+}
+</pre>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q7_option1"> <label for="q7_option1">Hello</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q7_option2"> <label for="q7_option2">Goodbye</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q7_option3"> <label for="q7_option3">Nothing</label>
+    </li>
+</ul>
+<p class="answer" id="q7_answer">Correct! The condition checks if 'i' is equal to '3' AND if 'j' is less than '5'. Since the result of this condition is false, the code inside the else statement will run.</p>
+
+<!-- Question 8 -->
+<h2>Question 8</h2>
+<p>What will print out when the following code runs?</p>
+<pre>
+var i = 7;
+var j = 2;
+
+if(i < 7 || j < 5) {
+    console.log("Hello");
+} else {
+    console.log("Goodbye");
+}
+</pre>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q8_option1"> <label for="q8_option1">Hello</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q8_option2"> <label for="q8_option2">Goodbye</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q8_option3"> <label for="q8_option3">Nothing</label>
+    </li>
+</ul>
+<p class="answer" id="q8_answer">Correct! The condition checks if 'i' is less than '7' OR if 'j' is less than '5'. Since the result of this condition is true, the code inside the if statement will run.</p>
+
+<!-- Question 9 -->
+<h2>Question 9</h2>
+<p>The result of <code>!false</code> is:</p>
+<p>0 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q9_option1"> <label for="q9_option1">true</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q9_option2"> <label for="q9_option2">undefined</label>
+    </li>
+</ul>
+<p class="answer" id="q9_answer">Correct! The result of <code>!false</code> is <strong>true</strong>.</p>
+
+<!-- Question 10 -->
+<h2>Question 10</h2>
+<p>What does the operator symbol <code>||</code> represent in JavaScript?</p>
+<p>1 / 1 point</p>
+<ul>
+    <li>
+        <input type="checkbox" id="q10_option1"> <label for="q10_option1">The logical NOT operator</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q10_option2"> <label for="q10_option2">The logical AND operator</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q10_option3"> <label for="q10_option3">The logical OR operator</label>
+    </li>
+</ul>
+<p class="answer" id="q10_answer">Correct! In JavaScript, <code>||</code> is the logical OR operator.</p>
+
+<!-- <script>
+    
+    // Check and show correct answers
+    document.querySelector("#q1_option1").addEventListener("change", function () {
+        document.querySelector("#q1_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q2_option2").addEventListener("change", function () {
+        document.querySelectorAll("#q2_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q2_option4").addEventListener("change", function () {
+        document.querySelectorAll("#q2_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q3_option1").addEventListener("change", function () {
+        document.querySelectorAll("#q3_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q3_option2").addEventListener("change", function () {
+        document.querySelectorAll("#q3_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q3_option3").addEventListener("change", function () {
+        document.querySelectorAll("#q3_answer").forEach(function (answer) {
+            answer.style display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q3_option4").addEventListener("change", function () {
+        document.querySelectorAll("#q3_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q4_option2").addEventListener("change", function () {
+        document.querySelectorAll("#q4_answer").forEach(function (answer) {
+            answer.style.display = this.checked ? "block" : "none";
+        });
+    });
+    document.querySelector("#q5_option1").addEventListener("change", function () {
+        document.querySelector("#q5_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q6_option3").addEventListener("change", function () {
+        document.querySelector("#q6_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q7_option2").addEventListener("change", function () {
+        document.querySelector("#q7_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q8_option1").addEventListener("change", function () {
+        document.querySelector("#q8_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q9_option1").addEventListener("change", function () {
+        document.querySelector("#q9_answer").style.display = this.checked ? "block" : "none";
+    });
+    document.querySelector("#q10_option3").addEventListener("change", function () {
+        document.querySelector("#q10_answer").style.display = this.checked ? "block" : "none";
+    });
+</script> -->
+
+</body>
+
+</html>
