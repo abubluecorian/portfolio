@@ -14,6 +14,10 @@ body
 	font-size: 16px;
 	font-weight: 400;
 }
+.body-ui{
+    width: 85%;
+    margin: 0 auto;
+}
 
 /* start all section */
 #home,
