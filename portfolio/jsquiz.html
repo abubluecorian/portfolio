@@ -10,18 +10,7 @@
         }
     </style>
 </head>
-<script>
-    const option1Check1 = document.getElementById('q1_option1');
-    option1Check1.addEventListener("click", function(){
-if(option1Check1.checked){
-    console.log("Correct!")
 
-}
-
- });
-    
-
-</script>
 
 <body>
 
@@ -229,6 +218,24 @@ if(i < 7 || j < 5) {
 </ul>
 <p class="answer" id="q10_answer">Correct! In JavaScript, <code>||</code> is the logical OR operator.</p>
 
+
+<script>
+ document.getElementById('q1_option1').addEventListener("click", function() {
+  if (this.checked) {
+    alert("Option 1 is correct for Question 1.");
+  }
+});
+
+document.getElementById('q2_option1').addEventListener("click", function() {
+  if (this.checked) {
+    alert("Option 1 is correct for Question 2.");
+  }
+});
+
+
+// Continue this pattern for other options and questions
+
+    </script>
 <!-- <script>
     
     // Check and show correct answers
