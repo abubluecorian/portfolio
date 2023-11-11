@@ -56,7 +56,7 @@
 <!-- Question 3 -->
 <h2>Question 3</h2>
 <p>Which of the following are valid data types in JavaScript? Select all that apply.</p>
-<p>1 / 1 point</p>
+<p>1 / 1 point- pLease check all options untill Popup appears </p>
 <ul>
     <li>
         <input type="checkbox" id="q3_option1"> <label for="q3_option1">string</label>
@@ -69,6 +69,9 @@
     </li>
     <li>
         <input type="checkbox" id="q3_option4"> <label for="q3_option4">null</label>
+    </li>
+    <li>
+        <input type="checkbox" id="q3_option5"> <label for="q3_option5">ALL</label>
     </li>
 </ul>
 <p class="answer" id="q3_answer">Correct! The string data type represents a sequence of characters in JavaScript.</p>
@@ -239,6 +242,15 @@ document.getElementById('q2_option4').addEventListener("click", function() {
     alert("Option 4 is also is correct for Question 2.");
   }
 });
+
+
+document.getElementById('q3_option5').addEventListener("click", function() {
+  if (this.checked) {
+    alert("All of the above are the data types");
+  }
+});
+
+
 
 
 // Continue this pattern for other options and questions
