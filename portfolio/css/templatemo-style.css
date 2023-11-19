@@ -5,6 +5,27 @@ Lavish HTML CSS Template
 https://templatemo.com/tm-458-lavish
 		
 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .task {
+    margin-bottom: 30px;
+  }
+  
+  .code-block {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
 
 body
 {
