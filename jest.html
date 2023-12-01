@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body-ui container ">
+    <h1>
+        Types of Testing and jests
+    </h1>
+    <h2>
+       
+        TYPES OF TESTING
+    </h2>
+    <code>
+        A correct example of a Jest test <br>
+
+
+        expect(concatStrings("123", "456")).toBe("123456");
+    </code>
+    <ul>
+        
+        <li>
+        e2e     
+        <code>
+            E two E tests are the slowest and take the most time to set up and run. Here are a few examples of eat away testing frameworks available on the market. Web driver Js Protractor and Cyprus.
+        </code>
+        </li>
+        <li>
+integration
+        </li>
+        <li>
+            UNIT testing- Self contained 
+            Unit tests are self contained. They're meant to test code in isolation, preferably separate from the rest of your app. This makes unit tests fast to run and easy to write. So That was a brief overview of the three different kinds of tests. Together, they are sometimes represented as a three level testing pyramid. First at the base of the Pyramid are the unit tests which have the highest speed and the lowest cost. Then in the center of the pyramid are the integration tests of average speed and expense. And finally at the top of the pyramid are the E two E tests, the slowest and most expensive tests to run. 
+         
+            <code>
+                You are now familiar with the three most common ways that you can test your applications
+            </code>
+        </li>
+    </ul>
+    <p>
+        <code>
+            At this stage, you might be familiar with the concept of testing your code 
+            to make sure it's working as you intend it. You might also have come across some syntax of testing frameworks. But what about a language like JavaScript that has no built-in testing functionality? For JavaScript, you can use testing frameworks like Jest. Over the next few minutes, I am going to introduce you to the features of the Jest framework, code coverage, mocking, and snapshot testing. It is quite a mouthful. Let's get started. JavaScript doesn't have built-in objects or methods that would allow for tests to be written. Therefore, many different libraries have been built to tackle the issue of testing. Some examples of these libraries include Jasmine, Mocha, Karma, and qUnit. Then there is the one that you will cover now, namely the Jest testing framework. Jest is a JavaScript testing framework. It's often used for testing code like React, a JavaScript library maintained by Meta and a community of individual developers and companies. Besides plain JavaScript and React code just allows you to test Babel, TypeScript, Node, Angular, Vue, and various other frameworks. Jest also supports code coverage. Code coverage is a measure of what percentage of my code is covered by tests. If I say that I have an 80 percent code coverage, that means that only one-fifth of my entire code base is not covered by tests. But even 100 percent code coverage doesn't mean that you have tested for every conceivable expectation. It just means that there are some expectations tested for each line of my code. Still, code coverage is a handy tool to gauge the amount of my code base that's included in tests. The higher the code coverage, the lower the chance of having unidentified bugs. As a rule, the higher the percentage of code coverage, the lower the amount of time required to write new tests. This, however, depends on whether there are incomplete software requirements pending or if you are going to receive more requirements in the future. Next, let's cover the concept of mocking. Mocking allows you to separate the code that you are testing from it's related dependencies. In other words, you can use the mocking features to make sure that your unit testing is stand-alone. For example, you can test the front end functionality of your web app by mocking the data as if it came back from a server when in fact it came from the client. Mocking is especially helpful because very often web applications are built by teams of developers. Some developers work on the backend of a feature and others work on the front end. This could result in bottlenecks. Take an example where the team decides to build a new feature that lists the address book of users of the app on the front end. The actual user related data for this feature would come from the server. But what if a back-end developer was a bit late in developing their part of the feature? Then a front end developer would be stuck waiting for the back-end developer to complete their work before the front-end code can be built. With mocking you can avoid this bottleneck. Mocks, allow you to pretend that the users are already there. The needed data comes from the mock rather than from the backend. This allows the front-end developers to finish their site of the new feature independently. In certain cases, developers can use mocking to ship features faster. Some libraries, such as sign-on, focus specifically on mocking. But the great thing about Jest is that you use it's mock functions without any additional installations. In Jest you use mocking by employing Jest mock functions. It's also easy to test asynchronous code in Jest. There are no difficult setups and tests are relatively easy to code even for newcomers to the framework. Finally, Jest allows you to perform snapshot testing. Snapshot testing is used by developers to verify that there are no regressions in the DOM of our apps after some changes to the code base are made. You're now familiar with the 
+            concept of testing your JavaScript code using the Jest testing framework. Great work.
+        </code>
+    </p>
+    <h1>
+        JEST
+    </h1>
+    <code>
+        At this stage, you might be familiar with the concept of testing your code to make sure it's working as you intend it. You might also have come across some syntax of testing frameworks. But what about a language like JavaScript that has no built-in testing functionality? For JavaScript, you can use testing frameworks like Jest. Over the next few minutes, I am going to introduce you to the features of the Jest framework, code coverage, mocking, and snapshot testing. It is quite a mouthful. Let's get started. JavaScript doesn't have built-in objects or methods that would allow for tests to be written. Therefore, many different libraries have been built to tackle the issue of testing. Some examples of these libraries include Jasmine, Mocha, Karma, and qUnit. Then there is the one that you will cover now, namely the Jest testing framework. Jest is a JavaScript testing framework. It's often used for testing code like React, a JavaScript library maintained by Meta and a community of individual developers and companies. Besides plain JavaScript and React code just allows you to test Babel, TypeScript, Node, Angular, Vue, and various other frameworks. Jest also supports code coverage. Code coverage is a measure of what percentage of my code is covered by tests. If I say that I have an 80 percent code coverage, that means that only one-fifth of my entire code base is not covered by tests. But even 100 percent code coverage doesn't mean that you have tested for every conceivable expectation. It just means that there are some expectations tested for each line of my code. Still, code coverage is a handy tool to gauge the amount of my code base that's included in tests. The higher the code coverage, the lower the chance of having unidentified bugs. As a rule, the higher the percentage of code coverage, the lower the amount of time required to write new tests. This, however, depends on whether there are incomplete software requirements pending or if you are going to receive more requirements in the future. Next, let's cover the concept of mocking. Mocking allows you to separate the code that you are testing from it's related dependencies. In other words, you can use the mocking features to make sure that your unit testing is stand-alone. For example, you can test the front end functionality of your web app by mocking the data as if it came back from a server when in fact it came from the client. Mocking is especially helpful because very often web applications are built by teams of developers. Some developers work on the backend of a feature and others work on the front end. This could result in bottlenecks. Take an example where the team decides to build a new feature that lists the address book of users of the app on the front end. The actual user related data for this feature would come from the server. But what if a back-end developer was a bit late in developing their part of the feature? Then a front end developer would be stuck waiting for the back-end developer to complete their work before the front-end code can be built. With mocking you can avoid this bottleneck. Mocks, allow you to pretend that the users are already there. The needed data comes from the mock rather than from the backend. This allows the front-end developers to finish their site of the new feature independently. In certain cases, developers can use mocking to ship features faster. Some libraries, such as sign-on, focus specifically on mocking. But the great thing about Jest is that you use it's mock functions without any additional installations. In Jest you use mocking by employing Jest mock functions. It's also easy to test asynchronous code in Jest. There are no difficult setups and tests are relatively easy to code even for newcomers to the framework. Finally, Jest allows you to perform snapshot testing. Snapshot testing is used by developers to verify that there are no regressions in the DOM of our apps after some changes to the code base are made. You're now familiar with the concept of testing your JavaScript code using the Jest testing framework. Great work.
+(Required)
+en
+​
+
+    </code>
+</body>
+</html>

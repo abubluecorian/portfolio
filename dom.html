@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        p {
+            color: #666;
+        }
+        #inputSection {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px 0;
+            width: 300px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise: Web Page Content Update</h1>
+    <p>
+        In this reading, you will learn how to capture user input and process it. You'll be introduced to a simple example that demonstrates how to manipulate information displayed based on user input.
+    </p>
+    <!-- Content Explanation -->
+    <h2>Capturing User Input</h2>
+    <p>
+        To capture user input, you can use the built-in <code>prompt()</code> method. This method pops up a dialog box prompting the user to enter information:
+    </p>
+    <pre>
+        <code>
+let answer = prompt('What is your name?');
+        </code>
+    </pre>
+    <h2>Using HTML Forms</h2>
+    <p>
+        HTML forms provide a structured way to capture user input. Below is a test solution illustrating how to incorporate input elements within the webpage:
+    </p>
+    <!-- User Interface for Input -->
+    <div id="inputSection">
+        <h3>Type into the input to make this text change</h3>
+        <input type="text" id="textInput">
+        <button id="submitBtn">Submit</button>
+    </div>
+    <!-- JavaScript Logic -->
+    <script>
+        var h1 = document.createElement('h1');
+        h1.innerText = "Type into the input to make this text change";
+
+        var input = document.createElement('input');
+        input.setAttribute('type', 'text');
+        input.setAttribute('id', 'inputField');
+
+        var submitButton = document.createElement('button');
+        submitButton.innerText = "Submit";
+        submitButton.setAttribute('id', 'submitButton');
+
+        document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input);
+        document.body.appendChild(submitButton);
+
+        submitButton.addEventListener('click', function() {
+            var inputValue = document.getElementById('inputField').value;
+            h1.innerText = inputValue;
+        });
+    </script>
+    <!-- Additional Content -->
+    <p>
+        This completes this lesson item. Combining DOM manipulation and event handling allows for remarkable interactive websites. Understanding user input and dynamically updating content enriches user experiences.
+    </p>
+</body>
+</html>
