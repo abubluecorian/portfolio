@@ -35,33 +35,7 @@
 </head>
 <body>
     
-    <!-- JavaScript Logic -->
-    
-    <script>
-        var h1 = document.createElement('h1');
-        h1.innerText = "Type into the input to make this text change";
-
-
-
-        var input = document.createElement('input');
-        input.setAttribute('type', 'text');
-        input.setAttribute('id', 'inputField');
-
-        var submitButton = document.createElement('button');
-        submitButton.innerText = "Submit";
-        submitButton.setAttribute('id', 'submitButton');
-
-        document.body.innerText = '';
-        document.body.appendChild(h1);
-        document.body.appendChild(input);
-        document.body.appendChild(submitButton);
-
-        submitButton.addEventListener('click', function() {
-            var inputValue = document.getElementById('inputField').value;
-            h1.innerText = inputValue;
-        });
-        
-    </script>
+   
     <h1>Exercise: Web Page Content Update</h1>
     <p>
         In this reading, you will learn how to capture user input and process it.
@@ -159,6 +133,32 @@ submitButton.addEventListener('click', function() {
     </pre>
 </code>
 
-  
+   <!-- JavaScript Logic -->
+    
+   <script>
+    var h1 = document.createElement('h1');
+    h1.innerText = "Type into the input to make this text change";
+
+
+
+    var input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('id', 'inputField');
+
+    var submitButton = document.createElement('button');
+    submitButton.innerText = "Submit";
+    submitButton.setAttribute('id', 'submitButton');
+
+    document.body.innerText = '';
+    document.body.appendChild(h1);
+    document.body.appendChild(input);
+    document.body.appendChild(submitButton);
+
+    submitButton.addEventListener('click', function() {
+        var inputValue = document.getElementById('inputField').value;
+        h1.innerText = inputValue;
+    });
+    
+</script>
 </body>
 </html>
