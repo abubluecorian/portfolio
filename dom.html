@@ -55,15 +55,15 @@ let answer = prompt('What is your name?');
     <!-- User Interface for Input -->
     <div id="inputSection">
         <h3>Type into the input to make this text change</h3>
-        <input type="text" id="textInput">
-        <button id="submitBtn">Submit</button>
+        <input title="none" type="text" id="textInput">
+        <button type="button" id="submitBtn">Submit</button>
     </div>
     <!-- JavaScript Logic -->
     <script>
         var h1 = document.createElement('h1');
         h1.innerText = "Type into the input to make this text change";
 
-        
+
 
         var input = document.createElement('input');
         input.setAttribute('type', 'text');
