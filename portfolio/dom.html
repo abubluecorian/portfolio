@@ -64,6 +64,35 @@ let answer = prompt('What is your name?');
         <button type="button" id="submitBtn">Submit</button>
     </div>
     <!-- JavaScript Logic -->
+    <h1>
+        JAVASCRIPT LOGIC
+    </h1>
+    <code>
+        <pre>
+            var h1 = document.createElement('h1');
+            h1.innerText = "Type into the input to make this text change";
+    
+    
+    
+            var input = document.createElement('input');
+            input.setAttribute('type', 'text');
+            input.setAttribute('id', 'inputField');
+    
+            var submitButton = document.createElement('button');
+            submitButton.innerText = "Submit";
+            submitButton.setAttribute('id', 'submitButton');
+    
+            document.body.innerText = '';
+            document.body.appendChild(h1);
+            document.body.appendChild(input);
+            document.body.appendChild(submitButton);
+    
+            submitButton.addEventListener('click', function() {
+                var inputValue = document.getElementById('inputField').value;
+                h1.innerText = inputValue;
+            });
+        </pre>
+    </code>
     <script>
         var h1 = document.createElement('h1');
         h1.innerText = "Type into the input to make this text change";
