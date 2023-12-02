@@ -34,6 +34,34 @@
     </style>
 </head>
 <body>
+    
+    <!-- JavaScript Logic -->
+    
+    <script>
+        var h1 = document.createElement('h1');
+        h1.innerText = "Type into the input to make this text change";
+
+
+
+        var input = document.createElement('input');
+        input.setAttribute('type', 'text');
+        input.setAttribute('id', 'inputField');
+
+        var submitButton = document.createElement('button');
+        submitButton.innerText = "Submit";
+        submitButton.setAttribute('id', 'submitButton');
+
+        document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input);
+        document.body.appendChild(submitButton);
+
+        submitButton.addEventListener('click', function() {
+            var inputValue = document.getElementById('inputField').value;
+            h1.innerText = inputValue;
+        });
+        
+    </script>
     <h1>Exercise: Web Page Content Update</h1>
     <p>
         In this reading, you will learn how to capture user input and process it.
@@ -63,33 +91,6 @@ let answer = prompt('What is your name?');
         <input title="none" type="text" id="textInput">
         <button type="button" id="submitBtn">Submit</button>
     </div>
-    <!-- JavaScript Logic -->
-    
-    <script>
-        var h1 = document.createElement('h1');
-        h1.innerText = "Type into the input to make this text change";
-
-
-
-        var input = document.createElement('input');
-        input.setAttribute('type', 'text');
-        input.setAttribute('id', 'inputField');
-
-        var submitButton = document.createElement('button');
-        submitButton.innerText = "Submit";
-        submitButton.setAttribute('id', 'submitButton');
-
-        document.body.innerText = '';
-        document.body.appendChild(h1);
-        document.body.appendChild(input);
-        document.body.appendChild(submitButton);
-
-        submitButton.addEventListener('click', function() {
-            var inputValue = document.getElementById('inputField').value;
-            h1.innerText = inputValue;
-        });
-        
-    </script>
       <!-- Additional Content -->
       <p>
         This completes this lesson item. Combining DOM manipulation and event handling allows for remarkable interactive websites. Understanding user input and dynamically updating content enriches user experiences.
@@ -97,7 +98,7 @@ let answer = prompt('What is your name?');
 
 
 <p>
-    also we can make a calculator using this code in console  
+   Also we can make a calculator using this code in console  
 </p>
 <h1>
     Just copy and paste the follwing code in the console and see the magic 
