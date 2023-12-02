@@ -80,10 +80,46 @@ let answer = prompt('What is your name?');
             var inputValue = document.getElementById('inputField').value;
             h1.innerText = inputValue;
         });
+        
     </script>
-    <!-- Additional Content -->
-    <p>
+      <!-- Additional Content -->
+      <p>
         This completes this lesson item. Combining DOM manipulation and event handling allows for remarkable interactive websites. Understanding user input and dynamically updating content enriches user experiences.
     </p>
+
+
+<p>
+    also we can make a calculator using this code in console  
+</p>
+<h1>
+    Just copy and paste the follwing code in the console and see the magic 
+</h1>
+<code>
+    <pre>
+var h1 = document.createElement('h1');
+h1.innerText = "Type into the inputs to see the sum";
+
+var input1 = document.createElement('input');
+input1.setAttribute('type', 'text');
+
+var input2 = document.createElement('input');
+input2.setAttribute('type', 'text');
+
+var submitButton = document.createElement('button');
+submitButton.innerText = "Submit";
+
+document.body.innerText = '';
+document.body.appendChild(h1);
+document.body.appendChild(input1);
+document.body.appendChild(input2);
+document.body.appendChild(submitButton);
+
+submitButton.addEventListener('click', function() {
+    console.log(parseInt(input1.value) + parseInt(input2.value));
+});
+    </pre>
+</code>
+
+  
 </body>
 </html>
