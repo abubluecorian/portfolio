@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Manipulation Exercise</title>
+    <!-- CUSTOM STYLE AS TO AVOID ANY CONFUSION  -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -152,7 +153,29 @@ submitButton.addEventListener('click', function() {
 });
     </pre>
 </code>
+<script>
+    var h1 = document.createElement('h1');
+h1.innerText = "Type into the inputs to see the sum";
 
+var input1 = document.createElement('input');
+input1.setAttribute('type', 'text');
+
+var input2 = document.createElement('input');
+input2.setAttribute('type', 'text');
+
+var submitButton = document.createElement('button');
+submitButton.innerText = "Submit";
+
+document.body.innerText = '';
+document.body.appendChild(h1);
+document.body.appendChild(input1);
+document.body.appendChild(input2);
+document.body.appendChild(submitButton);
+
+submitButton.addEventListener('click', function() {
+    console.log(parseInt(input1.value) + parseInt(input2.value));
+});
+</script>
   
 </body>
 </html>

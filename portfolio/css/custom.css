@@ -1,0 +1,35 @@
+/* start of css for calculator  */
+
+body {
+  
+}
+
+h1 {
+    
+    margin-bottom: 20px;
+}
+
+input[type="text"], select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:last-child {
+    margin-bottom: 0;
+}

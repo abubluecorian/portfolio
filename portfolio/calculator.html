@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+            <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Advanced JavaScript Practices</title>
+                    <link rel="icon" type="image/x-icon" href="images/abu-passport-size-pic.jpg">
+                    <link rel="stylesheet" href="css/templatemo-style.css">
+                            <link rel="stylesheet" href="css/custom.css">
+                         
+                    </head>
+    <body>
+   
+        <!-- <h1>Type into the inputs to perform calculations</h1>
+        <input type="text" id="input1" placeholder="Enter number">
+        <select id="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+        </select>
+        <input type="text" id="input2" placeholder="Enter number">
+        <button id="calculate">Calculate</button>
+        <input type="text" id="result" readonly> -->
+        <script src="js/calculator.js"></script>
+        <h1>JavaScript Code Explanation</h1>
+<code>
+    <pre>
+ 
+        var h1 = document.createElement('h1');
+        h1.innerText = "Type into the inputs to perform calculations";
+        
+        var input1 = document.createElement('input');
+        input1.setAttribute('type', 'text');
+        
+        var input2 = document.createElement('input');
+        input2.setAttribute('type', 'text');
+        
+        var selectOperation = document.createElement('select');
+        var options = ["Addition (+)", "Subtraction (-)", "Multiplication (×)", "Division (÷)"];
+        
+        options.forEach(function(optionText, index) {
+            var option = document.createElement('option');
+            option.value = index;
+            option.text = optionText;
+            selectOperation.appendChild(option);
+        });
+        
+        var resultInput = document.createElement('input');
+        resultInput.setAttribute('type', 'text');
+        resultInput.setAttribute('readonly', true);
+        
+        var submitButton = document.createElement('button');
+        submitButton.innerText = "Calculate";
+        
+        // document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input1);
+        document.body.appendChild(selectOperation);
+        document.body.appendChild(input2);
+        document.body.appendChild(submitButton);
+        document.body.appendChild(resultInput);
+        
+        submitButton.addEventListener('click', function() {
+            var operation = parseInt(selectOperation.value);
+            var result;
+            
+            switch (operation) {
+                case 0:
+                    result = parseInt(input1.value) + parseInt(input2.value);
+                    break;
+                case 1:
+                    result = parseInt(input1.value) - parseInt(input2.value);
+                    break;
+                case 2:
+                    result = parseInt(input1.value) * parseInt(input2.value);
+                    break;
+                case 3:
+                    result = parseInt(input1.value) / parseInt(input2.value);
+                    break;
+                default:
+                    result = "Invalid Operation";
+            }
+            
+            resultInput.value = result;
+        });
+        
+    </pre>
+</code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Explanation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        p:first-child {
+            margin-top: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding JavaScript Code for Calculator</h1>
+
+    <p><strong>Creating HTML Elements:</strong></p>
+    <p><strong>h1</strong>, <strong>input1</strong>, <strong>input2</strong>, <strong>selectOperation</strong>, <strong>resultInput</strong>, and <strong>submitButton</strong> are created using <code>document.createElement()</code> for respective HTML elements.</p>
+    
+    <p><strong>Setting Attributes and Values:</strong></p>
+    <p><code>h1.innerText</code> sets the text content for the <strong>h1</strong> element.</p>
+    <p><strong>input1</strong> and <strong>input2</strong> are text input fields.</p>
+    <p><strong>selectOperation</strong> is a dropdown menu (<code>&lt;select&gt;</code>) for operations.</p>
+    <p><strong>options</strong> contains an array of strings for operation options.</p>
+    <p><code>forEach</code> loop creates <strong>option</strong> elements for each operation in <strong>options</strong> and appends them to the <strong>selectOperation</strong>.</p>
+    
+    <p><strong>Appending Elements to the Document Body:</strong></p>
+    <p>The elements created above (<strong>h1</strong>, <strong>input1</strong>, <strong>selectOperation</strong>, <strong>input2</strong>, <strong>submitButton</strong>, and <strong>resultInput</strong>) are appended to the document body using <code>document.body.appendChild()</code>.</p>
+    
+    <p><strong>Button Click Event Listener:</strong></p>
+    <p><strong>submitButton.addEventListener</strong> listens for a click event on the submit button.</p>
+    <p>When clicked, it gets the selected operation from the dropdown.</p>
+    <p>Performs the corresponding operation based on the selected value (0 for addition, 1 for subtraction, 2 for multiplication, and 3 for division).</p>
+    <p>The result of the calculation is displayed in the <strong>resultInput</strong> field.</p>
+
+    <p><strong>To convert this JavaScript code into an HTML file,</strong> you can place this script inside a <code>&lt;script&gt;</code> tag in the <code>&lt;body&gt;</code> section of an HTML file. This will create a simple calculator interface with input fields, a dropdown for operations, a button to calculate, and an output field to display the result.</p>
+</body>
+</html>
+
+    
+   
+
+       
+    </body>
+  
+</html>
