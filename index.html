@@ -13,9 +13,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+<style>
+    /* Basic styling */
+
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Main menu */
+.main-menu > li {
+  position: relative;
+  float: left;
+}
+
+.main-menu > li:hover .submenu {
+  display: block;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 350px;
+  z-index: 1;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu a {
+  padding: 10px;
+}
+
+.submenu a:hover {
+  background-color: #555;
+}
+
+</style>
 <body class="main-content">
+    <!-- Add this code snippet above your existing content -->
+    <nav class="navbar">
+        <ul class="main-menu">
+          <li><a href="#">Home</a></li>
+        
+          <li>
+            <a href="#">Works</a>
+            <ul class="submenu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">UI Design</a></li>
+              <li><a href="#">Front-end Development</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Certificates</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="portfolio/index.html">PORTFOLIO
+          </li>
+        </ul>
+      </nav>
+      
+  
    <div>
-    <a href="portfolio/index.html">PORTFOLIO
+   
     </div> </a>
     
     <header class="container header active" id="home">
